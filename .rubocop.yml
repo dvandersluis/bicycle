@@ -1,0 +1,16 @@
+inherit_gem:
+  rubocop_defaults: .rubocop.yml
+
+inherit_mode:
+  merge:
+    - Exclude
+
+AllCops:
+  TargetRubyVersion: 2.6
+
+Style/CaseEquality:
+  Exclude:
+    - spec/bicycle/card_spec.rb
+
+Style/FormatStringToken:
+  Enabled: false
